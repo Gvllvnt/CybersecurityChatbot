@@ -42,6 +42,10 @@ namespace CybersecurityChatbot
             {
                 return $"🎣 Phishing warning, {userName}: Never click suspicious links in emails or SMS. Legit companies won't ask for your password via email.";
             }
+            else if (input.Contains("help"))
+            {
+                return $"I can help you with passwords,phishing annd safe browsing,{userName}! Just ask me.";
+            }
             else if (input.Contains("brows") || input.Contains("safe"))
             {
                 return $"🌐 Safe browsing tip, {userName}: Look for 'https://' and the padlock icon before entering personal info.";
