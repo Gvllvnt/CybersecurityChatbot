@@ -12,7 +12,7 @@ namespace CybersecurityChatbot
             Console.Title = "Cybersecurity Awareness Bot - SA";
             Console.WindowWidth = 100;
             Console.WindowHeight = 35;
-            Console.BufferHeight = 500;  // ← ADD THIS - allows scrolling
+            Console.BufferHeight = 500;  
             Console.Clear();
 
             // Step 1: Play voice greeting
@@ -71,6 +71,12 @@ namespace CybersecurityChatbot
 
         static void PlayVoiceGreeting()
         {
+            if (BuildConfig.IsGitHubActions)
+            {
+                Console.WriteLine("(Running on GitHub Actions - voice greeting skipped)");
+                return;
+            }
+
             string audioPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Audio", "Greeting.wav");
             if (File.Exists(audioPath))
             {
