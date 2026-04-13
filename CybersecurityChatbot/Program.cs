@@ -9,7 +9,7 @@ namespace CybersecurityChatbot
     {
         static void Main(string[] args)
         {
-            Console.Title = "Cybersecurity Awareness Bot";
+            Console.Title = "Cybersecurity Awareness Bot - SA";
             Console.WindowWidth = 100;
             Console.WindowHeight = 35;
             Console.BufferHeight = 500;  // ← ADD THIS - allows scrolling
