@@ -51,7 +51,7 @@ namespace CybersecurityChatbot
 
         public static void PrintBorder()
         {
-            WriteLineColor(new string('═', 60), ConsoleColor.Cyan);
+            WriteLineColor(new string('═', 65), ConsoleColor.DarkYellow);
         }
 
         public static void PrintHeader(string title)
