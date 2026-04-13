@@ -67,7 +67,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\ASCII Art.txt" />
+    <None Include=".github\workflows\build.yml" />
     <Content Include="Audio\Greeting.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
