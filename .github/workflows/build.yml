@@ -9,8 +9,8 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     
-    - name: Setup MSBuild
+    - name: Add MSBuild to PATH
       uses: microsoft/setup-msbuild@v2
     
     - name: Build
-      run: msbuild CybersecurityChatbot.csproj /p:Configuration=Release
+      run: msbuild CybersecurityChatbot.csproj /p:Configuration=Release /p:TargetFrameworkVersion=v4.8
