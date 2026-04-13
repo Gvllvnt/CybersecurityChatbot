@@ -1,4 +1,5 @@
-﻿using System;
+﻿//Cybersecurity Awareness Bot - Protecting South Africans Online
+using System;
 using System.Media;
 using System.IO;
 

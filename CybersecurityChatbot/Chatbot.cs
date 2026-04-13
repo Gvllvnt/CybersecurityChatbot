@@ -1,4 +1,5 @@
-﻿using System;
+﻿//handles all chatbot responses and input from user
+using System;
 
 namespace CybersecurityChatbot
 {

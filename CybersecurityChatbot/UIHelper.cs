@@ -1,4 +1,5 @@
-﻿using System;
+﻿//manages typing effects and borders
+using System;
 using System.Threading;
 
 namespace CybersecurityChatbot
